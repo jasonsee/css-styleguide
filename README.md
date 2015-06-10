@@ -1,7 +1,10 @@
-*CSS Style Guide*
-As the portfolio of client work expands at WillowTree, it is essential that a team of front-end developers create consistant CSS. This document defines formatting and style rules for CSS. The goal is aimed at improving collaboration, code quality, and enabling supporting infrastructure across projects.
+CSS Style Guide
+-------------
+
+As the portfolio of client work expands, it is essential that a team of front-end developers create consistant CSS. This document defines formatting and style rules for CSS. The goal is aimed at improving collaboration, code quality, and enabling supporting infrastructure across projects.
 
 General Formatting Rules
+
 •   Avoid the use IDs. There is no point to using IDs in CSS. It takes 256 classes to override one ID. Make several classes out of the reusable parts of the ID.
 •   Use one level of indentation for each declaration.
 •   Always start with a CSS reset. HTML5 Boilerplate is the preferred starting point for projects.
@@ -216,8 +219,8 @@ Example:
  
 Media Queries
 Media queries allow us to gracefully degrade the DOM for different screen sizes. If you are adding any, be sure to test above and below the break-point you are targeting.
-•   It is generally advisable to keep media queries grouped by media at the bottom of the section.
-•   Rule sets for media queries should be indented one level in.
+*It is generally advisable to keep media queries grouped by media at the bottom of the section.
+*Rule sets for media queries should be indented one level in.
  
 Example:
 ```
