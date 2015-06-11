@@ -37,7 +37,7 @@ Incorrect:
  
 ## Table of Contents
 
-The WAT team encourages the style guide of Scalable and Modular Architecture for CSS (SMACSS) when creating a Table of Contents. Read more about Jonathan Snook’s SMACSS and the catagorizing of CSS rules.
+I encourage you to follow the style guide of [Scalable and Modular Architecture for CSS (SMACSS)](https://smacss.com/) when creating a Table of Contents. Read more about Jonathan Snook’s SMACSS and the catagorizing of CSS rules.
 1.  Base
 2.  Layout (positional)
 3.  Modules
@@ -67,15 +67,22 @@ The WAT team encourages the style guide of Scalable and Modular Architecture for
 ## Class Naming
 
 Naming is hard, but very important. It’s a crucial part of the process of developing a maintainable code base, and ensuring that you have a relatively scalable interface between your HTML and CSS.
-It is always preferable to name classes by the nature of what it is rather than by what it looks like. For instance, a class name of big-blue-text for a special note on a page is quite meaningless if it has been changed to have a small red text color.
-Instead of presentational or cryptic names, always class names that reflect the purpose of the element in question, or that are otherwise generic. Names that are specific and reflect the purpose of the element should be preferred as these are most understandable and the least likely to change.
+
+It is always preferable to name classes by the nature of what it is rather than by what it looks like. For instance, a class 
+name of big-blue-text for a special note on a page is quite meaningless if it has been changed to have a small red text color.
+
+Instead of presentational or cryptic names, always class names that reflect the purpose of the element in question, or that 
+are otherwise generic. Names that are specific and reflect the purpose of the element should be preferred as these are most 
+understandable and the least likely to change.
+
 Generic names are simply a fallback for elements that have no particular or no meaning different from their siblings. They are typically needed as “helpers.”
+
 Using functional or generic names reduces the probability of unnecessary document or template changes.
-•   Use lowercase and separate words with hyphens when naming selectors. Avoid camelcase and underscores.
-•   Use human readable selectors that describe what element(s) they style.
-•   Avoid quotes on attribute selector values.
-•   Avoid type selectors. Wrong: div.selector. This limits the reusability and is more work for the browser.
-•   Avoid action or verb-related class names
+* Use lowercase and separate words with hyphens when naming selectors. Avoid camelcase and underscores.
+* Use human readable selectors that describe what element(s) they style.
+* Avoid quotes on attribute selector values.
+* Avoid type selectors. Wrong: div.selector. This limits the reusability and is more work for the browser.
+* Avoid action or verb-related class names
  
 Correct: 
 ```
