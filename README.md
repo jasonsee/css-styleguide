@@ -38,10 +38,11 @@ Incorrect:
 ## Table of Contents
 
 I encourage you to follow the style guide of [Scalable and Modular Architecture for CSS (SMACSS)](https://smacss.com/) when creating a Table of Contents. Read more about Jonathan Snook’s SMACSS and the catagorizing of CSS rules.
-1.  Base
-2.  Layout (positional)
-3.  Modules
-4.  Theme
+
+1. Base
+2. Layout (positional)
+3. Modules
+4. Theme
  
 ``` 
 /* Example Table of Contents:
