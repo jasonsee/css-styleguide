@@ -1,21 +1,21 @@
-CSS Style Guide
--------------
+# CSS Style Guide
+
 
 As the portfolio of client work expands, it is essential that a team of front-end developers create consistant CSS. This document defines formatting and style rules for CSS. The goal is aimed at improving collaboration, code quality, and enabling supporting infrastructure across projects.
 
-General Formatting Rules
+## General Formatting Rules
 
-•   Avoid the use IDs. There is no point to using IDs in CSS. It takes 256 classes to override one ID. Make several classes out of the reusable parts of the ID.
-•   Use one level of indentation for each declaration.
-•   Always start with a CSS reset. HTML5 Boilerplate is the preferred starting point for projects.
-•   Use uppercase hex values only for color (#1F0541), exception might be rgba for opacity.
-•   Never use !important in CSS. If you are, you’re doing it wrong.
-•   Omit 0 values unless required. If the value of the width or height is 0, do not specify units. Not this: padding: 0 px;
-•   Use a leading 0 for decimal values. Ex: opacity: 0.6;
-•   Shorthand CSS will allow you to speed up the writing process, cut down on clutter in your stylesheets and will allow you to find things much easier. Ex: .box {margin: 10px 20px }
-•   Each selector should be on its own line ending with either a comma for a list or opening curly bracket. Nested selectors should be on one line. The closing brace should be flush left, using the same level of indentation as the opening selector.
-•   If you are attempting to fix an issue, attempt to remove code before adding more.
-•   Magic Numbers are unlucky. These are numbers that are used as quick fixes on a one-off basis. Example: .box { margin-top: 37px }.
+* Avoid the use IDs. There is no point to using IDs in CSS. It takes 256 classes to override one ID. Make several classes out of the reusable parts of the ID.
+* Use one level of indentation for each declaration.
+* Always start with a CSS reset. [HTML5 Boilerplate](https://html5boilerplate.com) is the preferred starting point for projects.
+* Use uppercase hex values only for color `#1F0541`, exception might be rgba for opacity.
+* Never use `!important` in CSS. If you are, you’re doing it wrong.
+* Omit 0 values unless required. If the value of the width or height is 0, do not specify units. Not this: `padding: 0 px;`
+* Use a leading 0 for decimal values. Ex: `opacity: 0.6`;
+* Shorthand CSS will allow you to speed up the writing process, cut down on clutter in your stylesheets and will allow you to find things much easier. Ex: `.box {margin: 10px 20px }`
+* Each selector should be on its own line ending with either a comma for a list or opening curly bracket. Nested selectors should be on one line. The closing brace should be flush left, using the same level of indentation as the opening selector.
+* If you are attempting to fix an issue, attempt to remove code before adding more.
+* Magic Numbers are unlucky. These are numbers that are used as quick fixes on a one-off basis. Example: `.box { margin-top: 37px }`.
  
 Correct:
 ```
@@ -35,7 +35,8 @@ Incorrect:
 .selector-1, .selector-2, .selector-3 {background: #fff; color: #000;}
 ``` 
  
-Table of Contents
+## Table of Contents
+
 The WAT team encourages the style guide of Scalable and Modular Architecture for CSS (SMACSS) when creating a Table of Contents. Read more about Jonathan Snook’s SMACSS and the catagorizing of CSS rules.
 1.  Base
 2.  Layout (positional)
@@ -63,7 +64,8 @@ The WAT team encourages the style guide of Scalable and Modular Architecture for
  ```
  
  
-Class Naming
+## Class Naming
+
 Naming is hard, but very important. It’s a crucial part of the process of developing a maintainable code base, and ensuring that you have a relatively scalable interface between your HTML and CSS.
 It is always preferable to name classes by the nature of what it is rather than by what it looks like. For instance, a class name of big-blue-text for a special note on a page is quite meaningless if it has been changed to have a small red text color.
 Instead of presentational or cryptic names, always class names that reflect the purpose of the element in question, or that are otherwise generic. Names that are specific and reflect the purpose of the element should be preferred as these are most understandable and the least likely to change.
@@ -113,23 +115,26 @@ Incorrect:
  }
  ```
  
-Whitespace
+## Whitespace
+
 Always be consistent with use of whitespace. Use whitespace to improve readabililty.
-•   Never mix spaces and tabs for indentation.
-•   Use tabs set to four spaces.
-•   Put a space after : in property declarations.
-•   Put spaces before { in rule declarations.
+* Never mix spaces and tabs for indentation.
+* Use tabs set to four spaces.
+* Put a space after : in property declarations.
+* Put spaces before { in rule declarations.
  
-Ems vs. Px
+## Ems vs. Px
+
 Use ems for font-size, because it preserves vertical rhythm. Additionally, unit-less line-height is preferred because it does not inherit a percentage value of its parent element, but instead is based on a multiplier of the font-size.
 
-Commenting
+##Commenting
+
 Well commented code is extremely important. Use comments to explain code: What does it cover, what purpose does it serve, why is respective solution used or preferred? Take time to describe components, how they work, their limitations, and the way they are constructed. Don’t leave others in the team guessing as to the purpose of uncommon or non-obvious code. http://www.stack.nl/~dimitri/doxygen/docblocks.html
-•   Use /*  */ for comment blocks (instead of //).
-•   Place comments on a new line above their subject.
-•   Avoid end of line comments.
-•   Keep line-length to a sensible maximum, e.g., 80 columns.
-•   Use “sentence case” and consistent text indentation.
+* Use /*  */ for comment blocks (instead of //).
+* Place comments on a new line above their subject.
+* Avoid end of line comments.
+* Keep line-length to a sensible maximum, e.g., 80 columns.
+* Use “sentence case” and consistent text indentation.
  
 Example: 
 ```
@@ -158,15 +163,15 @@ Example:
  /* Basic comment */
  ```
  
-Property Order
-1.  Preprocessor variables
-2.  display
-3.  position
-4.  color
-5.  font
-6.  background & border
-7.  border-radius & text-shadow
-8.  any other visual elements and vendor prefixes
+## Property Order
+1. Preprocessor variables
+2. display
+3. position
+4. color
+5. font
+6. background & border
+7. border-radius & text-shadow
+8. any other visual elements and vendor prefixes
  
 Example: 
 ```
@@ -217,10 +222,11 @@ Example:
  }
  ```
  
-Media Queries
+## Media Queries
+
 Media queries allow us to gracefully degrade the DOM for different screen sizes. If you are adding any, be sure to test above and below the break-point you are targeting.
-*It is generally advisable to keep media queries grouped by media at the bottom of the section.
-*Rule sets for media queries should be indented one level in.
+* It is generally advisable to keep media queries grouped by media at the bottom of the section.
+* Rule sets for media queries should be indented one level in.
  
 Example:
 ```
